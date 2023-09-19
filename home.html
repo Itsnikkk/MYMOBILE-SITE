@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Landing Page</title>
+	<link rel="stylesheet" href="land1.css">
+</head>
+<style>
+    *{
+	margin:0px;
+}
+
+/*Main Header*/
+header
+{
+	background:linear-gradient(45deg,rgb(0, 0, 0), rgb(103, 101, 101));
+	height:70px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	width: 100%;
+	position: fixed;
+}
+header>h1
+{
+	color:blue;
+	padding-left:20px;
+}
+
+header>#nav-links>a
+{
+	text-decoration:none;
+	margin:25px;
+	background-color:rgb(248,207,51);
+	padding:5px 12px;
+	border-radius:10px;
+}
+header>#nav-links>a:hover
+{
+	box-shadow:0 0 10px blue;
+}
+
+
+
+
+@media (min-width:0px) and (max-width:800px)
+{
+	header
+	{
+		flex-direction:column;
+		height:100px;
+	}
+	header>#nav-links
+	{
+		position:relative;
+		top:-20px;
+	}
+	header>#nav-links>a
+	{
+		margin:5px;
+	}
+}
+
+
+/*Landing Page*/
+.landing-page
+{
+	background:#191919;
+	background-size:cover;
+	/* height:85vh; */
+	color: white;
+	padding-top: 90px;
+}
+.landing-page>.wrapper
+{
+	height:inherit;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-around;
+	
+}
+
+
+.landing-page>.wrapper>button
+{
+	background-color:rgb(248,207,51);
+	border:none;
+	margin-top:10px;
+	padding:7px 15px;
+}
+#jsp{
+    height: 50px;
+    width: 100px;
+    margin-left: 120px;
+}
+
+.content{
+	padding-top: 20px;
+    height: 150px;
+    width: 50%;
+}
+#footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+#newarrival{
+	background:#191919;
+	
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:space-around;
+}
+#newarrival1{
+	width: 50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+}
+
+img{
+            height: 200px;
+            width: 200px;
+        }
+#nik{
+	height: 400px;
+	width: 100%;
+}
+.wrapper1{
+     width: 100%;
+}
+
+</style>
+<body>
+	<!-- Main Header -->
+	<header>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcxDrPUps37sA5H64DhPBlW9AumPd_HnxbNYPHfXSFT_0UC0WGPiMM8kGsZkDYNW9-tg&usqp=CAU" id="jsp">
+		<div id="nav-links">
+			<a href="home.html">HOME</a>
+			<a href="product.html">PRODUCT</a>
+			<a href="about.html">ABOUT</a>
+			<a href="contactus.html">CONTACT US</a>
+			<a href="profile.html">PROFILE</a>
+		</div>
+		<button id="cart" onclick="cart()">
+			<img style="height: 50px; width: 50px;" src="cart-shopping-solid.svg">
+		</button>
+	</header>
+
+	<!-- Landing Page -->
+	<div class="landing-page">
+		<div class="wrapper">
+           
+                <div class="wrapper1">
+					<h1>Mobile Phones</h1>
+                    <img  src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1684242615/Croma%20Assets/CMS/CAtegory/Mobile%20phone%20-%20C10/16-05-23/Desktop/Main%20Banner/D_main-banner_hat0zq.png?tr=w-2048" id="nik">
+                </div>
+            <div class="content"> 
+                <h1>Treat yourself to a new Mobile Phone</h1>
+				<br>
+				<p>Experience the world at your fingertips! Work, socialise, book a ride, play games, listen to music, watch your favourite shows, take a photo, or simply make a call! Buy a Mobile Phone from mymobile that does it all and then some.</p>
+			    <br>
+				<button><a href="product.html">Shop Now</a></button>
+            </div>
+            
+            <div id="newarrival1">
+				<h1>New Arrival For You</h1>
+               <div id="newarrival">
+                
+               </div>
+            </div>	
+		</div>	
+	</div>
+	<div id="footer">
+		<h1>footer</h1>
+	</div>
+    <script src="home.js">
+       
+    </script>
+</body>
+</html>

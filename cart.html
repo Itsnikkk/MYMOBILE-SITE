@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+	margin:0px;
+}
+
+/*Main Header*/
+header
+{
+	background:linear-gradient(45deg,rgb(0, 0, 0), rgb(103, 101, 101));
+	height:70px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	width: 100%;
+	position: fixed;
+}
+header>h1
+{
+	color:blue;
+	padding-left:20px;
+}
+
+header>#nav-links>a
+{
+	text-decoration:none;
+	margin:25px;
+	background-color:rgb(248,207,51);
+	padding:5px 12px;
+	border-radius:10px;
+}
+header>#nav-links>a:hover
+{
+	box-shadow:0 0 10px blue;
+}
+
+
+
+
+@media (min-width:0px) and (max-width:800px)
+{
+	header
+	{
+		flex-direction:column;
+		height:100px;
+	}
+	header>#nav-links
+	{
+		position:relative;
+		top:-20px;
+	}
+	header>#nav-links>a
+	{
+		margin:5px;
+	}
+}
+#jsp{
+    height: 50px;
+    width: 100px;
+    margin-left: 120px;
+}
+#landing-page{
+            
+    padding-top: 90px;
+	color: white;
+   }
+   body{
+    background:#191919;
+	background-size:cover;
+   }
+    </style>
+    
+</head>
+<body onload="showdata()">
+     <!-- Main Header -->
+	<header>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcxDrPUps37sA5H64DhPBlW9AumPd_HnxbNYPHfXSFT_0UC0WGPiMM8kGsZkDYNW9-tg&usqp=CAU" id="jsp">
+		<div id="nav-links">
+			<a href="home.html">HOME</a>
+			<a href="product.html">PRODUCT</a>
+			<a href="about.html">ABOUT</a>
+			<a href="contactus.html">CONTACT US</a>
+			<a href="profile.html">PROFILE</a>
+		</div>
+	</header>
+    <div id="landing-page">
+    <table border="1px solid black" style="border-collapse: collapse; width: 100%; text-align: center;"  >
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Product</th>
+                <th>p.name</th>
+                <th>price</th>
+                <th>qty</th>
+                <th>total</th>
+            </tr>
+        </thead>
+        <tbody id="tb1">
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total</td>
+                <td id="itemcount"></td>
+                <td id="totalamount"></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+<button>Place an order</button>
+    <script src="home.js">
+       
+    </script>
+    
+</body>
+</html>

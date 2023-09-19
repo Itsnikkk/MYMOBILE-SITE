@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="MDB1/css/bootstrap.css">
+    <link rel="stylesheet" href="MDB1/css/mdb.css">
+    <style>
+         *{
+	margin:0px;
+}
+        /*Main Header*/
+header
+{
+	background:linear-gradient(45deg,rgb(0, 0, 0), rgb(103, 101, 101));
+	height:70px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	width: 100%;
+	position: fixed;
+}
+header>h1
+{
+	color:blue;
+	padding-left:20px;
+}
+
+header>#nav-links>a
+{
+	text-decoration:none;
+	margin:25px;
+	background-color:rgb(248,207,51);
+	padding:5px 12px;
+	border-radius:10px;
+}
+header>#nav-links>a:hover
+{
+	box-shadow:0 0 10px blue;
+}
+button:hover
+{
+   box-shadow: 0 0 10px blue;
+}
+
+
+
+
+@media (min-width:0px) and (max-width:800px)
+{
+	header
+	{
+		flex-direction:column;
+		height:100px;
+	}
+	header>#nav-links
+	{
+		position:relative;
+		top:-20px;
+	}
+	header>#nav-links>a
+	{
+		margin:5px;
+	}
+}
+#jsp{
+    height: 50px;
+    width: 100px;
+    margin-left: 120px;
+}
+
+        img{
+            height: 120px;
+            width: 120px;
+        }
+        #img1{
+            height: 20px;
+            width: 20px;
+        }
+        #landing-page{
+            background:#191919;
+	background-size:cover;
+    padding-top: 90px;
+	color: white;
+        }
+        #footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+    </style>
+<body onload="showpro()">
+    <!-- Main Header -->
+	<header>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNcxDrPUps37sA5H64DhPBlW9AumPd_HnxbNYPHfXSFT_0UC0WGPiMM8kGsZkDYNW9-tg&usqp=CAU" id="jsp">
+		<div id="nav-links">
+			<a href="home.html">HOME</a>
+			<a href="product.html">PRODUCT</a>
+			<a href="about.html">ABOUT</a>
+			<a href="contactus.html">CONTACT US</a>
+            <a href="profile.html">PROFILE</a>
+		</div>
+        <button id="cart" onclick="cart()">
+            <img style="height: 50px; width: 50px;" src="cart-shopping-solid.svg">
+        </button>
+	</header>
+    <div id="landing-page">
+        <div class="d-flex justify-content-around align-items-center" id="wrapper">
+            <div>
+                <input type="text" id="text" placeholder="Enter a text"><button onclick="add1()"><img id="img1" src="magnifying-glass-solid.svg" ></button>
+            </div>
+        <select onchange="show()" id="select">
+            <option>filter</option>
+            <option>high-to-low</option>
+            <option>low-to-high</option>
+            <option>A-Z</option>
+            <option>Z-A</option>
+        </select>
+        
+    </div>
+    <div class="container" id="div1">
+    
+    </div>
+    </div>
+    <div id="footer">
+		<h1>footer</h1>
+	</div>
+    
+<script src="home.js">
+</script>
+</body>
+</html>
